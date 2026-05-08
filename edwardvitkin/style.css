@@ -195,6 +195,19 @@ body {
     font-size: 1.3rem;
 }
 
+.honor-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.accolade-seal {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 /* ===== Tabs ===== */
 .tabs-nav {
     display: flex;
@@ -427,6 +440,85 @@ body {
     background: var(--accent-purple);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px var(--accent-purple-glow);
+}
+
+/* In News Section */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.news-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+.news-card:hover {
+    background: white;
+    border-color: var(--accent-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.news-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    direction: rtl;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.news-summary {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+}
+
+.news-links {
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    direction: ltr; /* Ensure English buttons stay left-aligned */
+}
+
+.news-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.news-btn-primary {
+    background: var(--accent-teal-glow);
+    color: var(--accent-teal);
+    border: 1px solid transparent;
+}
+
+.news-btn-primary:hover {
+    background: var(--accent-teal);
+    color: white;
+}
+
+.news-btn-outline {
+    background: transparent;
+    color: var(--accent-purple);
+    border: 1px solid var(--accent-purple-glow);
+}
+
+.news-btn-outline:hover {
+    background: var(--accent-purple-glow);
 }
 
 /* Contact Section */
