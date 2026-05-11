@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Vitkin, PhD | Data Scientist & Researcher</title>
-    <meta name="description" content="Digital business card for Edward Vitkin, PhD - Data Scientist specializing in Machine Learning, Bioinformatics, and Healthcare Informatics.">
+    <meta name="description"
+        content="Digital business card for Edward Vitkin, PhD - Data Scientist specializing in Machine Learning, Bioinformatics, and Healthcare Informatics.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="bg-shapes">
         <div class="shape highlight-teal"></div>
@@ -24,27 +29,87 @@
         <!-- Hero Section -->
         <header class="hero-section">
             <div class="profile-avatar">
-                <img src="https://sensifai.health/wp-content/uploads/2025/06/edward_last.webp" alt="Edward Vitkin" class="avatar-img">
+                <img src="https://sensifai.health/wp-content/uploads/2025/06/edward_last.webp" alt="Edward Vitkin"
+                    class="avatar-img">
             </div>
             <h1 class="name">Edward Vitkin <span class="credentials">PhD</span></h1>
-            <h2 class="title" style="line-height: 1.5;">
-                <span style="color: var(--text-primary); font-weight: 600;">Head of Data Science</span> · Sensifai Health<br>
-                <span style="color: var(--text-primary); font-weight: 600;">Research Scientist</span> · Tel Aviv University
-            </h2>
+            <div class="roles-container" style="display: grid; grid-template-columns: 1fr auto 1fr; row-gap: 8px; align-items: center; margin-bottom: 1.25rem; font-size: 1.05rem; color: var(--text-secondary);">
+                
+                <!-- Role 1 -->
+                <div style="grid-column: 2; text-align: center;">
+                    <a href="https://sensifai.health/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+                        <span style="color: var(--text-primary); font-weight: 600;">Head of Data Science</span> · Sensifai Health
+                    </a>
+                </div>
+                <div style="grid-column: 3; display: flex; gap: 6px; padding-left: 12px; justify-content: flex-start;">
+                    <!-- Room for future logos -->
+                </div>
+
+                <!-- Role 2 -->
+                <div style="grid-column: 2; text-align: center;">
+                    <a href="https://agolberg.github.io/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+                        <span style="color: var(--text-primary); font-weight: 600;">Research Scientist</span> · Tel Aviv University
+                    </a>
+                </div>
+                <div style="grid-column: 3; display: flex; gap: 6px; padding-left: 12px; justify-content: flex-start;">
+                    <img src="images/logos/tau_transparent.png" alt="Tel Aviv University logo" onerror="this.style.display='none'" style="height: 1.4em; border-radius: 2px;">
+                </div>
+
+                <!-- Role 3 -->
+                <div style="grid-column: 2; text-align: center;">
+                    <a href="https://www.yakhini-research-group.org/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+                        <span style="color: var(--text-primary); font-weight: 600;">Research Associate</span> · Reichman University
+                    </a>
+                </div>
+                <div style="grid-column: 3; display: flex; gap: 6px; padding-left: 12px; justify-content: flex-start;">
+                    <img src="images/logos/reichman.svg" alt="Reichman University logo" onerror="this.style.display='none'" style="height: 1.4em; border-radius: 2px;">
+                </div>
+
+                <!-- Role 4 -->
+                <div style="grid-column: 2; text-align: center;">
+                    <span style="font-size: 0.95rem; color: var(--accent-teal); font-weight: 500;">
+                        ex-IBM Research · ex-IBM Watson Health
+                    </span>
+                </div>
+                <div style="grid-column: 3; display: flex; gap: 6px; padding-left: 12px; justify-content: flex-start;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM logo" onerror="this.style.display='none'" style="height: 1.1em; border-radius: 2px;">
+                </div>
+
+                <!-- Role 5 -->
+                <div style="grid-column: 2; text-align: center;">
+                    <span class="education" style="font-size: 0.95rem;">
+                        Technion — Israel Institute of Technology
+                    </span>
+                </div>
+                <div style="grid-column: 3; display: flex; gap: 6px; padding-left: 12px; justify-content: flex-start;">
+                    <img src="images/logos/technion_transparent.png" alt="Technion logo" onerror="this.style.display='none'" style="height: 1.4em; border-radius: 2px;">
+                </div>
+            </div>
+
+            <div class="lang-tags" style="display: flex; justify-content: center; gap: 8px; margin-top: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+                <span style="font-size: 0.75rem; background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 12px; color: var(--text-secondary); border: 1px solid rgba(0,0,0,0.05);">
+                    <i class="fa-solid fa-language" style="margin-right: 4px; color: var(--accent-teal);"></i> <strong>English</strong>
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 12px; color: var(--text-secondary); border: 1px solid rgba(0,0,0,0.05);">
+                    <strong>Hebrew</strong>
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,0,0,0.05); padding: 4px 10px; border-radius: 12px; color: var(--text-secondary); border: 1px solid rgba(0,0,0,0.05);">
+                    <strong>Russian</strong>
+                </span>
+            </div>
             
-            <p class="bio">
-                <span style="font-size: 0.95rem; color: var(--accent-teal); font-weight: 500;">ex-IBM Research · ex-IBM Watson Health</span>
-                <br>
-                <span class="education"><i class="fa-solid fa-graduation-cap"></i> Technion — Israel Institute of Technology</span>
-            </p>
+            <p class="bio" style="margin-top: 0;">
         </header>
 
         <!-- Accolades -->
         <section class="accolades" id="accolades">
-            <div class="honor-badge">
-                <img src="images/nai-member-badge.png" alt="NAI Senior Member" class="accolade-seal">
-                <span>Senior Member, <strong>National Academy of Inventors</strong></span>
-            </div>
+            <a href="https://academyofinventors.org/nai-welcomes-newest-class-of-senior-members/" target="_blank"
+                rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: inline-block;">
+                <div class="honor-badge">
+                    <img src="images/nai-member-badge.png" alt="NAI Senior Member" class="accolade-seal">
+                    <span>Senior Member, <strong>National Academy of Inventors</strong></span>
+                </div>
+            </a>
         </section>
 
         <!-- Tabs Navigation -->
@@ -70,7 +135,8 @@
                 <div class="research-card">
                     <div class="research-icon"><i class="fa-solid fa-heart-pulse"></i></div>
                     <h4>Physiological Data Processing</h4>
-                    <p>Analyzing wearable signals and inflammatory biomarkers with AI to predict immune system activity and enable early clinical intervention at Sensifai Health.</p>
+                    <p>Analyzing wearable signals and inflammatory biomarkers with AI to predict immune system activity
+                        and enable early clinical intervention at Sensifai Health.</p>
                 </div>
                 <div class="research-card">
                     <div class="research-icon"><i class="fa-solid fa-laptop-medical"></i></div>
@@ -80,12 +146,14 @@
                 <div class="research-card">
                     <div class="research-icon"><i class="fa-solid fa-dna"></i></div>
                     <h4>Synthetic & Systems Biology</h4>
-                    <p>Metabolic network reconstruction, biological circuit design, macroalgal bioconversion, and sustainable energy systems.</p>
+                    <p>Metabolic network reconstruction, biological circuit design, macroalgal bioconversion, and
+                        sustainable energy systems.</p>
                 </div>
                 <div class="research-card">
                     <div class="research-icon"><i class="fa-solid fa-brain"></i></div>
                     <h4>AI, Deep Learning & ML</h4>
-                    <p>Artificial Intelligence and neural networks for clinical prediction, diagnostic models, and bioprocess optimization.</p>
+                    <p>Artificial Intelligence and neural networks for clinical prediction, diagnostic models, and
+                        bioprocess optimization.</p>
                 </div>
             </div>
             <div class="metrics-bar">
@@ -113,21 +181,24 @@
                 <li class="pub-item">
                     <span class="pub-citations">106</span>
                     <div class="pub-info">
-                        <span class="pub-title">MIRAGE: A functional genomics-based approach for metabolic network model reconstruction</span>
+                        <span class="pub-title">MIRAGE: A functional genomics-based approach for metabolic network model
+                            reconstruction</span>
                         <span class="pub-year">2012</span>
                     </div>
                 </li>
                 <li class="pub-item">
                     <span class="pub-citations">72</span>
                     <div class="pub-info">
-                        <span class="pub-title">Macroalgae Biorefinery from Kappaphycus alvarezii: Conversion Modeling and Performance Prediction</span>
+                        <span class="pub-title">Macroalgae Biorefinery from Kappaphycus alvarezii: Conversion Modeling
+                            and Performance Prediction</span>
                         <span class="pub-year">2017</span>
                     </div>
                 </li>
                 <li class="pub-item">
                     <span class="pub-citations">64</span>
                     <div class="pub-info">
-                        <span class="pub-title">Proposed design of distributed macroalgal biorefineries: thermodynamics, bioconversion technology</span>
+                        <span class="pub-title">Proposed design of distributed macroalgal biorefineries: thermodynamics,
+                            bioconversion technology</span>
                         <span class="pub-year">2014</span>
                     </div>
                 </li>
@@ -141,7 +212,8 @@
                 <li class="pub-item">
                     <span class="pub-citations">21</span>
                     <div class="pub-info">
-                        <span class="pub-title">Energy efficient dewatering of microalgae with electro-flocculation</span>
+                        <span class="pub-title">Energy efficient dewatering of microalgae with
+                            electro-flocculation</span>
                         <span class="pub-year">2020</span>
                     </div>
                 </li>
@@ -153,7 +225,8 @@
                     </div>
                 </li>
             </ul>
-            <a href="https://scholar.google.com/citations?hl=en&user=kE-Ral4AAAAJ" target="_blank" rel="noopener noreferrer" class="btn scholar-link-btn">
+            <a href="https://scholar.google.com/citations?hl=en&user=kE-Ral4AAAAJ" target="_blank"
+                rel="noopener noreferrer" class="btn scholar-link-btn">
                 <i class="fa-brands fa-google-scholar"></i> View All on Google Scholar
             </a>
         </section>
@@ -163,30 +236,40 @@
             <h3 class="section-title">> In_The_News</h3>
             <div class="news-list">
                 <div class="news-card" style="direction: ltr; text-align: left;">
-                    <h4 class="news-title">A Remarkable Achievement: 10 TAU Researchers Named Senior Members of the U.S. National Academy of Inventors</h4>
+                    <h4 class="news-title">A Remarkable Achievement: 10 TAU Researchers Named Senior Members of the U.S.
+                        National Academy of Inventors</h4>
                     <p class="news-summary">
-                        Tel Aviv University celebrates an exceptional milestone: ten of its researchers, including Dr. Edward Vitkin, have been selected as Senior Members of the United States National Academy of Inventors (NAI) for 2026.
+                        Tel Aviv University celebrates an exceptional milestone: ten of its researchers, including Dr.
+                        Edward Vitkin, have been selected as Senior Members of the United States National Academy of
+                        Inventors (NAI) for 2026.
                     </p>
                     <div class="news-links" style="justify-content: flex-start;">
-                        <a href="innews/10-researchers-academy-of-inventors/index.html" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
+                        <a href="innews/10-researchers-academy-of-inventors/index.html" target="_blank"
+                            rel="noopener noreferrer" class="news-btn news-btn-primary">
                             <i class="fa-solid fa-file-lines"></i> Read Saved Article
                         </a>
-                        <a href="https://english.tau.ac.il/news/10-researchers-academy-of-inventors" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-outline">
+                        <a href="https://english.tau.ac.il/news/10-researchers-academy-of-inventors" target="_blank"
+                            rel="noopener noreferrer" class="news-btn news-btn-outline">
                             <i class="fa-solid fa-link"></i> Original TAU Article
                         </a>
                     </div>
                 </div>
 
                 <div class="news-card">
-                    <h4 class="news-title" style="direction: ltr; text-align: left;">10 ученых Тель-Авивского университета избраны в престижную академию изобретателей США</h4>
+                    <h4 class="news-title" style="direction: ltr; text-align: left;">10 ученых Тель-Авивского
+                        университета избраны в престижную академию изобретателей США</h4>
                     <p class="news-summary">
-                        Vesty (Ynet's Russian edition) feature highlighting the election of ten leading Tel Aviv University researchers, including Dr. Edward Vitkin, to the prestigious U.S. National Academy of Inventors.
+                        Vesty (Ynet's Russian edition) feature highlighting the election of ten leading Tel Aviv
+                        University researchers, including Dr. Edward Vitkin, to the prestigious U.S. National Academy of
+                        Inventors.
                     </p>
                     <div class="news-links">
-                        <a href="innews/10-ученых-тель-авивского-университета-избраны-в-престижную-академию-изобретателей-сша/index.html" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
+                        <a href="innews/10-ученых-тель-авивского-университета-избраны-в-престижную-академию-изобретателей-сша/index.html"
+                            target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
                             <i class="fa-solid fa-file-lines"></i> Read Saved Article
                         </a>
-                        <a href="https://www.vesty.co.il/main/article/hkb4i88iwg" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-outline">
+                        <a href="https://www.vesty.co.il/main/article/hkb4i88iwg" target="_blank"
+                            rel="noopener noreferrer" class="news-btn news-btn-outline">
                             <i class="fa-solid fa-link"></i> Original Vesty Article
                         </a>
                     </div>
@@ -195,13 +278,17 @@
                 <div class="news-card">
                     <h4 class="news-title">10 חוקרים מאוניברסיטת תל אביב נבחרו לאקדמיה הלאומית לממציאים של ארה"ב</h4>
                     <p class="news-summary">
-                        Ten researchers from Tel Aviv University, including Dr. Edward Vitkin, were elected as Senior Members of the National Academy of Inventors (NAI) in the United States, recognizing their significant contributions to innovation, patents, and scientific advancement.
+                        Ten researchers from Tel Aviv University, including Dr. Edward Vitkin, were elected as Senior
+                        Members of the National Academy of Inventors (NAI) in the United States, recognizing their
+                        significant contributions to innovation, patents, and scientific advancement.
                     </p>
                     <div class="news-links">
-                        <a href="innews/10-חוקרים-מאוניברסיטת-תל-אביב-נבחרו-לאקדמיה-הלאומית-לממציאים-של-ארהב/index.html" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
+                        <a href="innews/10-חוקרים-מאוניברסיטת-תל-אביב-נבחרו-לאקדמיה-הלאומית-לממציאים-של-ארהב/index.html"
+                            target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
                             <i class="fa-solid fa-file-lines"></i> Read Saved Article
                         </a>
-                        <a href="https://www.ynet.co.il/environment-science/article/rjf9t4uswg" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-outline">
+                        <a href="https://www.ynet.co.il/environment-science/article/rjf9t4uswg" target="_blank"
+                            rel="noopener noreferrer" class="news-btn news-btn-outline">
                             <i class="fa-solid fa-link"></i> Original Ynet Article
                         </a>
                     </div>
@@ -210,16 +297,22 @@
                 <div class="news-card" style="direction: ltr; text-align: left;">
                     <h4 class="news-title">NAI Welcomes Newest Class of Senior Members</h4>
                     <p class="news-summary">
-                        The National Academy of Inventors (NAI) officially announces the 2026 class of Senior Members, introducing 230 emerging inventors from Member Institutions globally, including Dr. Edward Vitkin.
+                        The National Academy of Inventors (NAI) officially announces the 2026 class of Senior Members,
+                        introducing 230 emerging inventors from Member Institutions globally, including Dr. Edward
+                        Vitkin.
                     </p>
                     <div class="news-links" style="justify-content: flex-start;">
-                        <a href="innews/nai-welcomes-newest-class-of-senior-members/index.html" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary">
+                        <a href="innews/nai-welcomes-newest-class-of-senior-members/index.html" target="_blank"
+                            rel="noopener noreferrer" class="news-btn news-btn-primary">
                             <i class="fa-solid fa-file-lines"></i> Read Saved Announcement
                         </a>
-                        <a href="innews/nai-welcomes-newest-class-of-senior-members/2026-Senior-Member-List.pdf" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary" style="background: #e74c3c; border-color: #c0392b; color: white;">
+                        <a href="innews/nai-welcomes-newest-class-of-senior-members/2026-Senior-Member-List.pdf"
+                            target="_blank" rel="noopener noreferrer" class="news-btn news-btn-primary"
+                            style="background: #e74c3c; border-color: #c0392b; color: white;">
                             <i class="fa-solid fa-file-pdf"></i> View Member List (PDF)
                         </a>
-                        <a href="https://academyofinventors.org/nai-welcomes-newest-class-of-senior-members/" target="_blank" rel="noopener noreferrer" class="news-btn news-btn-outline">
+                        <a href="https://academyofinventors.org/nai-welcomes-newest-class-of-senior-members/"
+                            target="_blank" rel="noopener noreferrer" class="news-btn news-btn-outline">
                             <i class="fa-solid fa-link"></i> Original NAI Site
                         </a>
                     </div>
@@ -235,11 +328,13 @@
                     <i class="fa-regular fa-envelope"></i>
                     <span>dr.edwardv@gmail.com</span>
                 </a>
-                <a href="https://linkedin.com/in/edward-vitkin-phd" target="_blank" rel="noopener noreferrer" class="contact-row" id="linkedin-link">
+                <a href="https://linkedin.com/in/edward-vitkin-phd" target="_blank" rel="noopener noreferrer"
+                    class="contact-row" id="linkedin-link">
                     <i class="fa-brands fa-linkedin-in"></i>
                     <span>linkedin.com/in/edward-vitkin-phd</span>
                 </a>
-                <a href="https://scholar.google.com/citations?hl=en&user=kE-Ral4AAAAJ" target="_blank" rel="noopener noreferrer" class="contact-row" id="scholar-link">
+                <a href="https://scholar.google.com/citations?hl=en&user=kE-Ral4AAAAJ" target="_blank"
+                    rel="noopener noreferrer" class="contact-row" id="scholar-link">
                     <i class="fa-brands fa-google-scholar"></i>
                     <span>Google Scholar Profile</span>
                 </a>
@@ -248,4 +343,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
