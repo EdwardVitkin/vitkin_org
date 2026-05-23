@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioLEGO | Advanced Biorefinery Design & Evaluation</title>
+    <meta name="description" content="BioLEGO is an in-silico design tool for biorefinery modeling and evaluation, utilizing Flux Balance Analysis (FBA) for multi-organism fermentation systems.">
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-theme">
+    <nav id="navbar">
+        <div class="logo">Bio<span>LEGO</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#builder">Builder</a></li>
+            <li><a href="#tech">Technology</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="https://www.worldscientific.com/doi/10.1142/S2339547815400038" target="_blank" class="btn-primary">Read Paper</a>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Designing the Future of <span>Biorefineries</span></h1>
+            <p class="fade-in">A modular in-silico approach to evaluating serial fermentation and multi-organism metabolic systems.</p>
+            <div class="hero-btns fade-in">
+                <a href="#builder" class="btn-primary">Try the Builder</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in">
+            <div class="glass-card">
+                <img src="static/images/hero.png" alt="BioLEGO Concept">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modular Modeling</h2>
+                <p>BioLEGO treats biorefinery design like assembling building blocks, allowing for complex simulations through simple components.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card glass">
+                    <i class="fas fa-microbe"></i>
+                    <h3>Organism Modules</h3>
+                    <p>Precise metabolic models based on Flux Balance Analysis (FBA) to predict cellular behavior.</p>
+                </div>
+                <div class="card glass">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Biomass Modules</h3>
+                    <p>Input specifications for various feedstocks, including macroalgae and agricultural waste.</p>
+                </div>
+                <div class="card glass">
+                    <i class="fas fa-gears"></i>
+                    <h3>Process Configs</h3>
+                    <p>Flexible serial and parallel fermentation stages optimized for maximum yield.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="builder">
+        <div class="container">
+            <div class="section-header">
+                <h2>Biorefinery Builder</h2>
+                <p>Drag and drop modules to simulate your own biorefinery configuration.</p>
+            </div>
+            <div class="builder-interface">
+                <div class="blocks-panel">
+                    <div class="block" draggable="true" data-type="biomass">Macroalgae</div>
+                    <div class="block" draggable="true" data-type="biomass">Glucose</div>
+                    <div class="block" draggable="true" data-type="organism">S. cerevisiae</div>
+                    <div class="block" draggable="true" data-type="organism">E. coli (Modified)</div>
+                </div>
+                <div class="assembly-area">
+                    <div class="reactor-column">
+                        <div class="reactor-title">Reactor 0</div>
+                        <div class="drop-zone" id="zone-1"><span>Drop Input Media</span></div>
+                    </div>
+                    <div class="connector"><i class="fas fa-arrow-right"></i></div>
+                    <div class="reactor-column">
+                        <div class="reactor-title">Reactor 1</div>
+                        <div class="drop-zone" id="zone-2"><span>Drop Organism</span></div>
+                    </div>
+                    <div class="connector"><i class="fas fa-arrow-right"></i></div>
+                    <div class="reactor-column">
+                        <div class="reactor-title">Reactor 2</div>
+                        <div class="drop-zone" id="zone-3"><span>Drop Organism</span></div>
+                    </div>
+                </div>
+                <div class="stats-panel glass">
+                    <h3>Prediction Engine <span style="font-size: 0.8rem; opacity: 0.7; font-weight: normal;">(Mock-up)</span></h3>
+                    <div class="stat">
+                        <label>Ethanol Yield</label>
+                        <div class="progress-bar"><div class="fill" style="width: 0%"></div></div>
+                        <span class="value">0.00 g/L</span>
+                    </div>
+                    <div class="stat">
+                        <label>Carbon Efficiency</label>
+                        <div class="progress-bar"><div class="fill" style="width: 0%"></div></div>
+                        <span class="value">0%</span>
+                    </div>
+                    <button class="btn-primary" id="simulate-btn" style="width: 100%; margin-bottom: 1rem;">Run FBA Simulation</button>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; line-height: 1.4;">* Contact me to get real estimations based on your specific media and available fermenting organisms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h2>In-Silico <span>FBA Engine</span></h2>
+                    <p>At the core of BioLEGO is a sophisticated Flux Balance Analysis engine that computes the optimal flux distribution across metabolic pathways.</p>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle"></i> Distributed FBA simulations</li>
+                        <li><i class="fas fa-check-circle"></i> Serial biomass fermentation tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Yield vs. Efficiency optimization</li>
+                    </ul>
+                </div>
+                <div class="tech-visual">
+                    <!-- Placeholder for a dynamic chart or SVG -->
+                    <div class="fba-nodes">
+                        <div class="node glucose">Glucose</div>
+                        <div class="node ethanol">Ethanol</div>
+                        <div class="node atp">ATP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Bio<span>LEGO</span></div>
+                <p>&copy; 2026 BioLEGO System. Based on research by Yakhini et al.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
