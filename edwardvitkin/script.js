@@ -36,6 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Toggle All Publications section
+    const allPubsToggle = document.getElementById('all-pubs-toggle');
+    const allPubsWrapper = document.getElementById('all-pubs-wrapper');
+    
+    if (allPubsToggle && allPubsWrapper) {
+        allPubsToggle.addEventListener('click', () => {
+            allPubsToggle.classList.toggle('expanded');
+            allPubsWrapper.classList.toggle('expanded');
+        });
+    }
+
     // Parallax on avatar
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
